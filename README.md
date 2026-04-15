@@ -20,7 +20,7 @@
 
 ## 📱 Mobile Responsive View
 
-![Mobile View](./docs/screenshots/mobile-view.png)
+![Mobile View](./screenshot/072d9b25-d151-4875-b0ad-e1d6beed84da.png)
 
 > The UI is fully responsive across all screen sizes — from 320px mobile to 1440px desktop.
 
