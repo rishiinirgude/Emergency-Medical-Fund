@@ -10,11 +10,11 @@ const inter = Inter({ subsets: ["latin"] });
 export const metadata: Metadata = {
   title: "MedFund – Emergency Medical Fund Wallet",
   description:
-    "Transparent blockchain crowdfunding for emergency medical expenses. Funds released to verified hospitals via milestone approvals.",
-  keywords: ["medical", "crowdfunding", "blockchain", "ethereum", "defi"],
+    "Transparent blockchain crowdfunding for emergency medical expenses on Stellar. Funds released to verified hospitals via milestone approvals.",
+  keywords: ["medical", "crowdfunding", "blockchain", "stellar", "soroban", "xlm"],
   openGraph: {
     title: "MedFund – Emergency Medical Fund Wallet",
-    description: "Transparent blockchain crowdfunding for emergency medical expenses.",
+    description: "Transparent blockchain crowdfunding for emergency medical expenses on Stellar.",
     type: "website",
   },
 };
