@@ -7,10 +7,10 @@ edition = "2021"
 crate-type = ["cdylib", "rlib"]
 
 [dependencies]
-soroban-sdk = { version = "21.0.0", features = ["alloc"] }
+soroban-sdk = "22.0.0"
 
 [dev-dependencies]
-soroban-sdk = { version = "21.0.0", features = ["testutils", "alloc"] }
+soroban-sdk = { version = "22.0.0", features = ["testutils"] }
 hospital_verification = { path = "../hospital_verification", features = ["testutils"] }
 care_token = { path = "../care_token", features = ["testutils"] }
 

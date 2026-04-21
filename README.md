@@ -45,35 +45,29 @@ The pipeline runs on every push to `main` and every pull request:
 
 ## 📋 Contract Addresses (Stellar Testnet)
 
-| Contract | Contract ID |
-|---|---|
-| `hospital_verification` | `C...` |
-| `medical_fund` | `C...` |
-| `care_token` (CARE token) | `C...` |
-
-> Replace with real contract IDs after running `./scripts/deploy.sh testnet`.
+| Contract | Contract ID | Explorer |
+|---|---|---|
+| `hospital_verification` | `CDKTLGIEFLLOWS2HLZ46WAZDKCGC5D7CROJFUNBPDZEGQMRWPSXDJ4QW` | [View ↗](https://stellar.expert/explorer/testnet/contract/CDKTLGIEFLLOWS2HLZ46WAZDKCGC5D7CROJFUNBPDZEGQMRWPSXDJ4QW) |
+| `medical_fund` | `CBVQ6IKPHWJA3IHWP6VVHDVIFUCF462YELXQ3FMKSDFMCJFSZ4ORVXV4` | [View ↗](https://stellar.expert/explorer/testnet/contract/CBVQ6IKPHWJA3IHWP6VVHDVIFUCF462YELXQ3FMKSDFMCJFSZ4ORVXV4) |
+| `care_token` | `CDSKXQJHQXT6KL3425IUCMQCVA5VKBTLX3OJYGGZK4DSDR22EZFKE3U4` | [View ↗](https://stellar.expert/explorer/testnet/contract/CDSKXQJHQXT6KL3425IUCMQCVA5VKBTLX3OJYGGZK4DSDR22EZFKE3U4) |
 
 ### Token
 
 | Token | Symbol | Contract ID |
 |---|---|---|
-| CareToken | `CARE` | `C...` |
+| CareToken | `CARE` | [`CDSKXQJHQXT6KL3425IUCMQCVA5VKBTLX3OJYGGZK4DSDR22EZFKE3U4`](https://stellar.expert/explorer/testnet/contract/CDSKXQJHQXT6KL3425IUCMQCVA5VKBTLX3OJYGGZK4DSDR22EZFKE3U4) |
 
 Rate: **1000 CARE per 1 XLM** donated.
 
-### Inter-Contract Call Transaction Hashes
+### Deployment Transaction Hashes
 
-| Action | Tx Hash |
-|---|---|
-| Deploy hospital_verification | `...` |
-| Deploy care_token | `...` |
-| Deploy medical_fund | `...` |
-| Wire care_token minter → medical_fund | `...` |
-| Create Campaign (calls `is_verified()`) | `...` |
-| Donate (calls `mint_reward()`) | `...` |
-| Release Milestone (XLM transfer) | `...` |
-
-> View all transactions on [Stellar Expert Testnet](https://stellar.expert/explorer/testnet).
+| Action | Tx Hash | Explorer |
+|---|---|---|
+| Deploy hospital_verification | `dfeb429a819817679f5e7dbe5411dc53b296a0227706c97cf25fbd01c16d37ba` | [View ↗](https://stellar.expert/explorer/testnet/tx/dfeb429a819817679f5e7dbe5411dc53b296a0227706c97cf25fbd01c16d37ba) |
+| Deploy care_token | `207103b18ac26a2a48b0f9e490eed785c378e2367c83ad4c6811bb6929ac1bbe` | [View ↗](https://stellar.expert/explorer/testnet/tx/207103b18ac26a2a48b0f9e490eed785c378e2367c83ad4c6811bb6929ac1bbe) |
+| Deploy medical_fund | `f0eb21f9a85538321ef8436d9a9c82d7a400eecbb3e730b3b54d441dfb37dfe9` | [View ↗](https://stellar.expert/explorer/testnet/tx/f0eb21f9a85538321ef8436d9a9c82d7a400eecbb3e730b3b54d441dfb37dfe9) |
+| Initialize medical_fund (inter-contract wiring) | `485e7fd1ea6b33e02cb2689b2dae32b5d82fbbf9860a7838754a210131288939` | [View ↗](https://stellar.expert/explorer/testnet/tx/485e7fd1ea6b33e02cb2689b2dae32b5d82fbbf9860a7838754a210131288939) |
+| Wire care_token minter → medical_fund | `724e0824bcdb5ace42ae1c3b670282599e7bb2c4b7847aaf56d7ac8b12e9f7e6` | [View ↗](https://stellar.expert/explorer/testnet/tx/724e0824bcdb5ace42ae1c3b670282599e7bb2c4b7847aaf56d7ac8b12e9f7e6) |
 
 ---
 
